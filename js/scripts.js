@@ -8,5 +8,7 @@ $(document).ready(function() {
     $(".noun").append("blah blah");
 
     $("#story").show();
+
+    event.preventDefault();
   });
 });
