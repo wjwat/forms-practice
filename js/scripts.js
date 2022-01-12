@@ -18,4 +18,12 @@ $(document).ready(function() {
 
     event.preventDefault();
   });
+
+  $('#shout-form').on('submit', function () {
+    let newShout = $('input#user-shout').val().toUpperCase();
+
+    $('.card-body').text(newShout + Math.random());
+
+    event.preventDefault();
+  });
 });
